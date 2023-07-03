@@ -1,6 +1,6 @@
 let express =require('express');
 let app=express();
-let port = https://internassign2023.netlify.app;
+let port = process.env.Port || 8000;
 
 const path=require("path");
 const hbs=require('hbs');
