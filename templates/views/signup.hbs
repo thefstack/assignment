@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    {{>header}}
+
+    <section id="loginContainer">
+        <div class="bg" id="bg1"><img src="images/shield.png" alt=""></div>
+    <div class="bg" id="bg2"><img src="images/lock.png" alt=""></div>
+    <div class="bg" id="bg3"><img src="images/lock.png" alt=""></div>
+    <div class="bg" id="bg4"><img src="images/cloud.png" alt=""></div>
+    <div class="bg" id="bg5"><img src="images/lock.png" alt=""></div>
+    
+    <div id="login">
+        <div class="top">
+            <img src="images/user.png" alt="">
+            <h1>Sign Up</h1>
+        </div>
+        <div class="bottom">
+            <div class="name">
+                <label for="name">Full Name</label>
+                <input type="text" name="name">
+            </div>
+            <div class="position">
+                <label for="position">Position you are applying for</label>
+            <input type="text" name="position">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+            <input type="email" name="email">
+            </div>
+            <div class="number">
+                <label for="number">Phone Number</label>
+            <input type="number" name="number">
+            </div>
+            <div class="country">
+                <label for="country">Country</label>
+            <input type="text" name="country">
+            </div>
+            <div class="city">
+                <label for="city">City</label>
+            <input type="text" name="city">
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+            <input type="password" name="password">
+            </div>
+            <div class="cnfpassword">
+                <label for="cnfpassword">Confirm Password</label>
+            <input type="password" name="cnfpassword">
+            </div>
+            
+        </div>
+        <button id="reg">Register</button>
+    </div>
+    </section>
+
+    {{>footer}}
+
+
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  
+    <script src="https://unpkg.com/scrollreveal"></script>
+ 
+    <script src="js/signup.js"></script>
+    <script src="js/myscript.js"></script>
+
+</body>
+</html>

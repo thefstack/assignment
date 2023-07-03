@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#loginContainer{
+    width: 100%;
+    background: linear-gradient(to top right,#ffe7ce 0%,#ffcda8 30%,#ffaac9 65%,#e4a5ff 100%);
+    background-repeat: no-repeat;
+    padding: 20px;
+
+}
+#loginContainer #login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 99;
+    padding-bottom: 15px;
+    margin-top: 100px;
+}
+
+#loginContainer #login .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#loginContainer #login .top img{
+    width: 100px;
+}
+#loginContainer #login .top h1{
+    font-size: 2.3rem;
+}
+
+#loginContainer #login .bottom{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    border-radius: 20px;
+    background: #ffaac909;
+    padding: 20px 10px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+#loginContainer #login .bottom div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 80px;
+}
+
+#loginContainer #login .bottom div label{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 12%;
+}
+
+#loginContainer #login .bottom div input{
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 0px solid #0000004a;
+    min-width: 300px;
+    font-size: 1rem;
+    box-shadow: 0px 0px 5px #0404044a;
+    margin: 0 auto;
+}
+
+#loginContainer #login #reg{
+    padding: 10px 90px;
+    background: linear-gradient(to right,#01f18f,#00a3f7);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #bbb;
+    border-radius: 10px;
+}
+
+
+
+
+
+@media(max-width:890px){
+    #loginContainer #login .bottom{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+.bg{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 0;
+}
+.bg img{
+    width: 100%;
+}
+#bg1{
+    width: 15vw;
+    left: -2%;
+    top: 5%;
+    transform: rotate(-20deg);
+    opacity: 0.7;
+}
+#bg2{
+    width: 5vw;
+    right: 4vw;
+    top: 5%;
+    transform: rotate(-20deg);
+    opacity: 0.8;
+}
+#bg3{
+    width: 5vw;
+    right: 15vw;
+    top: 30%;
+    transform: rotate(10deg);
+    opacity: 0.5;
+}
+#bg4{
+    width: 20vw;
+    right: 4vw;
+    bottom: 10%;
+    opacity: 0.8;
+}
+#bg5{
+    width: 5vw;
+    left: 4vw;
+    top: 50%;
+    transform: rotate(10deg);
+    opacity: 0.8;
+}
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/login.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    {{>header}}
+
+    <section id="loginContainer">
+        <div class="bg" id="bg1"><img src="images/shield.png" alt=""></div>
+    <div class="bg" id="bg2"><img src="images/lock.png" alt=""></div>
+    <div class="bg" id="bg3"><img src="images/lock.png" alt=""></div>
+    <div class="bg" id="bg4"><img src="images/cloud.png" alt=""></div>
+    <div class="bg" id="bg5"><img src="images/lock.png" alt=""></div>
+    
+    <section id="login">
+        <div class="login-info">
+            <div id="header">
+                <img src="images/user.png" alt="">
+                <h1>Sign In</h1>
+            </div>
+            <div id="email">
+                <input id="emailLogin" type="email" name="email">
+                <label id="emailLoginLabel" for="email">Email Address</label>
+            </div>
+            <div id="password">
+                <input id="passwordLogin" type="password" name="password">
+                <label id="passwordLoginLabel" for="password">Password</label>
+            </div>
+            <div id="radio">
+                <span id="checkbox"></span>
+                <input type="checkbox" name="rememberme">
+                <label for="rememberme">Remember me</label>
+            </div>
+            <div id="button">
+                <button>Continue</button>
+              <i class='bx bx-chevron-right'></i>
+            </div>
+            <p id="signup">Don't have an account? Sign up</p>
+        </div>
+        <div id="otheroptions">
+            <div class="othercontainer">
+                <img src="images/Facebook_f_logo_(2021).svg.webp" alt="">
+                <p>Login with Facebook</p>
+            </div>
+            <div class="othercontainer">
+                <img src="images/Google__G__Logo.svg.png" alt="">
+                <p>Login With Google</p>
+            </div>
+            <div class="othercontainer">
+                <img src="images/Logo_of_Twitter.svg.webp" alt="">
+                <p>Login with Twitter</p>
+            </div>
+        </div>
+    </section>
+    </section>
+    
+    {{>footer}}
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  
+    <script src="https://unpkg.com/scrollreveal"></script>
+ 
+    <script src="js/login.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

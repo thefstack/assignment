@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 350px;
+}
+#loginContainer{
+    position: relative;
+    background: linear-gradient(to top right,#ffe7ce 0%,#ffcda8 30%,#ffaac9 65%,#e4a5ff 100%);
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding-top: 200px;
+}
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    z-index: 99;
+}
+#login #header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 5%;
+}
+#login #header img{
+    width: 150px;
+}
+#login #header h1{
+    font-size: 2rem;
+}
+
+#login #login-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+#login .login-info #email,#login .login-info #password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+}
+
+#login .login-info #email label,#login .login-info #password label{
+    position: absolute;
+    left: 10px;
+    top: -5px;
+    font-size: 1rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+
+#login .login-info input{
+    padding:  5px 10px;
+    background: transparent;
+    border: none;
+    width: 350px;
+    border-bottom: 2px solid #00d9ae;
+    outline: none;
+    font-size: 1rem;
+    z-index: 99;
+}
+
+#login .login-info #radio{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   position: relative;
+}
+#login .login-info #radio input{
+    display: none;
+}
+#login .login-info #radio #checkbox{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #00d9ae;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+#login .login-info #radio input:checked + #checkbox{
+    background: #ffe7ce;
+}
+
+#login .login-info #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    position: relative;
+    text-align: center;
+}
+
+#login .login-info #button button{
+    padding: 10px 80px ;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right,#00d9ae,#707ff1);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#login .login-info #button i{
+    font-size: 2rem;
+    position: absolute;
+    right: 80px
+}
+#login .login-info p{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+#login #otheroptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#login #otheroptions .othercontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right,#00d9ae,#707ff1);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+#login #otheroptions .othercontainer img{
+    width: 30px;
+}
+
+
+.bg{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+.bg img{
+    width: 100%;
+}
+#bg1{
+    width: 15vw;
+    left: -2%;
+    top: 15%;
+    transform: rotate(-20deg);
+    opacity: 0.7;
+}
+#bg2{
+    width: 5vw;
+    right: 4vw;
+    top: 10%;
+    transform: rotate(-20deg);
+    opacity: 0.8;
+}
+#bg3{
+    width: 5vw;
+    right: 15vw;
+    top: 30%;
+    transform: rotate(10deg);
+    opacity: 0.5;
+}
+#bg4{
+    width: 20vw;
+    right: 4vw;
+    top: 50%;
+    opacity: 0.8;
+}
+#bg5{
+    width: 5vw;
+    left: 4vw;
+    top: 50%;
+    transform: rotate(10deg);
+    opacity: 0.8;
+}
+
+#loginContainer #login #signup:hover{
+    cursor: pointer;
+    color: #707ff1;
+}
+
+
+
+
+
+@media(max-width:800px)
+{
+    #login{
+        flex-direction: column;
+        padding-bottom: 50px;
+        height: 700px;
+    }
+}

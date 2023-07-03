@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#recruit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top right,#ffe7ce 0%,#ffcda8 30%,#ffaac9 65%,#e4a5ff 100%);
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 80px;
+    min-height: 700px;
+}
+#recruit .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#recruit .top img{
+    width: 150px;
+}
+#recruit .top h1{
+    font-size: 2rem;
+    text-align: center;
+}
+#recruit .top h1 img{
+    width: 20px;
+}
+
+
+#recruit .bottom{
+    margin-top: 10px;
+    background: transparent;
+    box-shadow: 0px 0px 10px #1e1c1d25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    width: 60%;
+    padding-top: 10px;
+}
+#recruit .bottom img{
+    width: 100px;
+}
+#recruit .bottom .cont{
+    display: flex;
+    flex-direction: column;
+}
+#recruit .bottom .cont label{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#recruit .bottom .cont input{
+    width: 300px;
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    background: #fff;
+    box-shadow: 0 0 5px #18171852;
+    border-radius: 10px;
+}
+
+#recruit .bottom #generate{
+    padding: 10px 50px;
+    background: linear-gradient(to right,#01f18f,#00a3f7);
+    margin: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #0000004f;
+    font-weight: 700;
+}
+
+
+
+@media(max-width:700px){
+    #recruit .bottom{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+.bg{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 0;
+}
+.bg img{
+    width: 100%;
+}
+#bg1{
+    width: 15vw;
+    left: -2%;
+    top: 5%;
+    transform: rotate(-20deg);
+    opacity: 0.7;
+}
+#bg2{
+    width: 5vw;
+    right: 4vw;
+    top: 5%;
+    transform: rotate(-20deg);
+    opacity: 0.8;
+}
+#bg3{
+    width: 5vw;
+    right: 15vw;
+    top: 30%;
+    transform: rotate(10deg);
+    opacity: 0.5;
+}
+#bg4{
+    width: 20vw;
+    right: 4vw;
+    bottom: 10%;
+    opacity: 0.8;
+}
+#bg5{
+    width: 5vw;
+    left: 4vw;
+    top: 50%;
+    transform: rotate(10deg);
+    opacity: 0.8;
+}
+
+
