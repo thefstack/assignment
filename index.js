@@ -1,6 +1,6 @@
 let express =require('express');
 let app=express();
-let port =8000;
+let port = process.env.Port || 8000;
 
 const path=require("path");
 const hbs=require('hbs');
